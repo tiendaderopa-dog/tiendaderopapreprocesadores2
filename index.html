@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <table class="header-table">
+        <tr>
+            <td class="logo">
+                <center><img src="img/logo1.avif" alt="Logo"></center>
+            </td>
+            <td>
+                <center>
+                    <h3 class="store-title">TIENDA DE ROPA</h3>
+                    <h1 class="store-slogan">¡Aquí encontrarás lo mejor para ti!</h1>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <table class="nav-table">
+        <tr>
+            <td><center><a href="#" class="nav-link">Inicio</a></center></td>
+            <td><center><a href="#" class="nav-link">Servicios</a></center></td>
+            <td><center><a href="#" class="nav-link">Productos</a></center></td>
+        </tr>
+    </table>
+
+    <table class="main-table">
+        <tr>
+            <td class="marquee-container">
+                <marquee behavior="alternate">
+                    <h1>¡AQUÍ NUESTRA SECCIÓN DE INICIO!</h1>
+                    <img src="img/imagen1.jpg" alt="imagen">
+                </marquee>
+            </td>
+            <td class="form-container">
+                <table class="form-table">
+                    <tr>
+                        <td>
+                            <center><h2>INGRESA TUS DATOS</h2></center>
+                            <label for="nombre">Nombres y Apellidos:</label><br>
+                            <input type="text" id="nombre" name="nombre" required><br><br>
+
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                            <label for="dni">DNI:</label><br>
+                            <input type="text" id="dni" name="dni" maxlength="8" pattern="\d{8}" title="Debe ingresar exactamente 8 números" required><br><br>
+
+                            <fieldset>
+                                <legend>Satisfacción por la atención</legend>
+                                <label for="pago">Método de pago:</label><br>
+                                <select id="pago" name="pago" required>
+                                    <option value="contado">Contado</option>
+                                    <option value="tarjeta">Tarjeta</option>
+                                </select>
+
+                                <h2>Reseña de la página:</h2>
+                                <input type="checkbox" id="bueno">
+                                <label for="bueno">Buena</label><br>
+                                <input type="checkbox" id="regular">
+                                <label for="regular">Regular</label><br>
+                                <input type="checkbox" id="malo">
+                                <label for="malo">Mala</label><br>
+
+                                <h2>Comentario</h2>
+                                <label for="comentario">Déjanos tu comentario aquí:</label><br>
+                                <textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea><br><br>
+                            </fieldset>
+
+                            <input type="submit" value="Registrarse">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <center><p>TREICY MORGAN</p></center>
+    </footer>
+</body>
+</html>
